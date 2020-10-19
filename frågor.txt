@@ -1,0 +1,26 @@
+1. När använder man add respektive commit?
+
+Man kan inte göra 'commit' utan att göra 'add' först. 'Add' lägger filer på staging area som ska commit'as senare. 
+'Commit'sparar ändringar i din local repository.
+	
+
+
+2. Vad är pull repektive push?
+
+'Pull' hämtar innehållet från remote repository och slår ihop de på din local repository.
+'Push' skickar innehållet från din local repository till remote repository. Man skickar commit från local till remote repository.
+
+
+
+3. När använder man log respektive status?
+
+'Log' visar information om redan commit'ade filer och andra händelser i den aktuella branchen. 
+'Status' hjälper att se information inom 'working directory', t.ex. vad är det som händer, om det finns 
+filer som ska commit'as osv.
+
+
+
+4. Hur kan man formulera sig i sina commit-meddelanden?
+
+Man kan formulera sig på olika sätt, men det bästa är att lämna ett konkret och tydlig meddelande så att 
+det är lätt att förstå vilka ändringar just den commit innehåller.
