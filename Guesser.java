@@ -32,8 +32,10 @@ public class Guesser{
    */
   public void start(){
     // call the rules method here
+    rules();
     // call the doGuesses() method here
-  }
+    doGuesses();
+}
 
   private void rules(){
     System.out.println("Think of a number between " +
