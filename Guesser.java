@@ -24,10 +24,12 @@ public class Guesser{
   
   // Write the constructor below this line.
 
-  public Guesser(int low, int hight) {
-     this.low = low;
-     this.high = high;
-}
+  public Guesser(int low, int high) {
+    this.low = low;
+    this.high = high;
+
+  }
+
   /*
    * Task 2. Complete the start() method, so that
    * in the method body, you call first the
@@ -35,10 +37,10 @@ public class Guesser{
    */
   public void start(){
     // call the rules method here
-    rules();
+   rules();
     // call the doGuesses() method here
-    doGuesses();
-}
+   doGuesses();
+  }
 
   private void rules(){
     System.out.println("Think of a number between " +
@@ -60,12 +62,18 @@ public class Guesser{
    */
   private String getReply(){
     String reply = null;
+    Console cnsl = System.console();
+    reply = cnsl.readLine();
+   while (!reply.equals("T") && !reply.equals("F")) {
+      System.out.println("Please, answer T (for true) or F (for false)!");
+      reply = cnsl.readLine();
+    }
+    return reply;
+    }
     // Write code here which reads a String from the console.
     // As long as it is not a valid reply (one of "T" and "F")
     // write an error message, and read a new reply.
     // When you have gotten a valid reply, return it.
-    return reply;
-  }
 
   private void doGuesses(){
     int i=0; // number of guesses
@@ -102,3 +110,4 @@ public class Guesser{
   }
 
 }
+
